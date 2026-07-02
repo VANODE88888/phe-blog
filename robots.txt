@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://heat-exchanger-blog.example.com/sitemap.xml
+Sitemap: https://vanode88888.github.io/phe-blog/sitemap.xml

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heat-exchanger-blog.example.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/about.html</loc><priority>0.7</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/tags.html</loc><priority>0.7</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/plate-heat-exchanger-basics.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/alfalaval-introduction.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/apv-introduction.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/gea-introduction.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/tranter-introduction.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/other-brands.html</loc><priority>0.8</priority></url>
-  <url><loc>https://heat-exchanger-blog.example.com/articles/phe-selection-maintenance.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/</loc><priority>1.0</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/about.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/tags.html</loc><priority>0.7</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/plate-heat-exchanger-basics.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/alfalaval-introduction.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/apv-introduction.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/gea-introduction.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/tranter-introduction.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/other-brands.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vanode88888.github.io/phe-blog/articles/phe-selection-maintenance.html</loc><priority>0.8</priority></url>
 </urlset>
