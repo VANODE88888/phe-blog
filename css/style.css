@@ -162,6 +162,21 @@ img {
   background: var(--primary-bg);
 }
 
+.navbar-links .lang-switch-item a {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  transition: all 0.2s;
+}
+
+.navbar-links .lang-switch-item a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
 .theme-toggle {
   width: 38px;
   height: 38px;

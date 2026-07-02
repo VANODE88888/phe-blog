@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Guide to Plate Heat Exchanger Selection &amp; Maintenance - PHE Blog</title>
+  <meta name="description" content="Proper selection and regular maintenance are key to ensuring long-term stable operation of plate heat exchangers. This article systematically covers PHE engineering practice from sizing calculations to daily maintenance." />
+  <meta property="og:title" content="Complete Guide to Plate Heat Exchanger Selection &amp; Maintenance" />
+  <meta property="og:description" content="Proper selection and regular maintenance are key to ensuring long-term stable operation of plate heat exchangers. This article systematically covers PHE engineering practice from sizing calculations to daily maintenance." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://vanode88888.github.io/phe-blog/en/articles/phe-selection-maintenance.html" />
+  <meta property="og:site_name" content="Plate Heat Exchanger Blog" />
+  <meta name="baidu-site-verification" content="codeva-BlqOLVMNRx" />
+  <meta name="google-site-verification" content="NSE6O_FGevKwoshkVLlL7rcCVeF7ZUFJUjywEZGmyzQ" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">
+        <a href="../../index.html" style="text-decoration:none;color:inherit;">
+          <span class="logo-icon">⚙️</span>
+          <span>PHE Blog</span>
+        </a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../tags.html">Tags</a></li>
+        <li><a href="../../about.html">About</a></li>
+        <li class="lang-switch-item"><a href="../index.html">🇨🇳 中文</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+
+    <div class="container fade-in">
+      <div class="article-detail">
+        <a href="../index.html" class="back-btn">← Back to Home</a>
+        <div class="article-detail-header">
+          <div class="tags-row"><span class="tag">Selection</span><span class="tag">Maintenance</span><span class="tag">Engineering Practice</span></div>
+          <h1>Complete Guide to Plate Heat Exchanger Selection & Maintenance</h1>
+          <div class="meta-row">
+            <span class="meta-item">📅 May 18, 2026</span>
+            <span class="meta-item">⏱ 14 min read</span>
+          </div>
+        </div>
+      </div>
+      <div class="markdown-body">
+        <h2>Pre-Selection Data Requirements</h2>
+<p>PHE selection is a systematic engineering process requiring accurate process parameters. The following information should be collected before sizing:</p>
+<h3>1. Fluid Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hot side flow rate</td>
+<td>m³/h or kg/h</td>
+</tr>
+<tr>
+<td>Cold side flow rate</td>
+<td>m³/h or kg/h</td>
+</tr>
+<tr>
+<td>Hot side inlet temperature</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>Hot side outlet temperature</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>Cold side inlet temperature</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>Cold side outlet temperature</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>Media name</td>
+<td>Water, oil, steam, refrigerant, etc.</td>
+</tr>
+<tr>
+<td>Media concentration</td>
+<td>Note if corrosive or particle-containing</td>
+</tr>
+<tr>
+<td>Physical properties</td>
+<td>Density, specific heat, thermal conductivity, viscosity</td>
+</tr>
+</tbody></table>
+<h3>2. Allowable Pressure Drop</h3>
+<ul>
+<li>Hot side allowable pressure drop (kPa or bar)</li>
+<li>Cold side allowable pressure drop (kPa or bar)</li>
+</ul>
+<h3>3. Design Pressure and Temperature</h3>
+<ul>
+<li>Maximum working pressure (MPa)</li>
+<li>Maximum working temperature (°C)</li>
+<li>Whether special design conditions are required</li>
+</ul>
+<h3>4. Space and Connection Requirements</h3>
+<ul>
+<li>Installation space dimension constraints</li>
+<li>Nozzle orientation requirements</li>
+<li>Connection standards (flange standard, thread specification)</li>
+</ul>
+<hr>
+<h2>Heat Load Calculation</h2>
+<h3>Basic Formula</h3>
+<pre data-lang="text"><code class="hljs language-text">Q = m · cp · ΔT
+</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>Q</code>: Heat load, kW</li>
+<li><code>m</code>: Mass flow rate, kg/s</li>
+<li><code>cp</code>: Specific heat capacity, kJ/(kg·°C)</li>
+<li><code>ΔT</code>: Temperature difference, °C</li>
+</ul>
+<h3>Example</h3>
+<p>A cooling system:</p>
+<ul>
+<li>Hot water flow rate: 50 m³/h</li>
+<li>Hot water density: 1000 kg/m³ → mass flow rate = 50 × 1000 / 3600 = 13.89 kg/s</li>
+<li>Hot water specific heat: 4.18 kJ/(kg·°C)</li>
+<li>Hot water inlet: 80°C, outlet: 60°C</li>
+</ul>
+<p>Heat load:</p>
+<pre data-lang="text"><code class="hljs language-text">Q = 13.89 × 4.18 × (80 - 60) = 1161 kW
+</code></pre>
+<hr>
+<h2>Log Mean Temperature Difference (LMTD)</h2>
+<p>For counter-current heat exchangers:</p>
+<pre data-lang="text"><code class="hljs language-text">LMTD = (ΔT1 - ΔT2) / ln(ΔT1 / ΔT2)
+</code></pre>
+<p>Example:</p>
+<ul>
+<li>Hot side: 80°C → 60°C</li>
+<li>Cold side: 20°C → 40°C</li>
+<li>Counter-current: ΔT1 = 80 - 40 = 40°C, ΔT2 = 60 - 20 = 40°C</li>
+<li>LMTD = (40 - 40) / ln(40/40) → not directly calculable</li>
+</ul>
+<p>When ΔT1 = ΔT2, LMTD = ΔT1 = ΔT2 = 40°C.</p>
+<h3>Temperature Approach</h3>
+<p>PHEs can typically achieve small approach temperatures (1–3°C), a key indicator of their high efficiency.</p>
+<hr>
+<h2>Core Selection Principles</h2>
+<h3>1. Estimating Heat Transfer Area</h3>
+<pre data-lang="text"><code class="hljs language-text">A = Q / (K · LMTD · F)
+</code></pre>
+<p>Where:</p>
+<ul>
+<li><code>A</code>: Heat transfer area, m²</li>
+<li><code>K</code>: Heat transfer coefficient, W/(m²·K), PHEs typically 3,000–6,000</li>
+<li><code>F</code>: Correction factor, typically 0.8–0.95</li>
+</ul>
+<h3>2. Estimating Plate Count</h3>
+<pre data-lang="text"><code class="hljs language-text">N = A / A_single
+</code></pre>
+<p>Where <code>A_single</code> is the effective heat transfer area of a single plate.</p>
+<h3>3. Flow Configuration</h3>
+<p>PHE flow configuration directly affects heat transfer and pressure drop:</p>
+<ul>
+<li><strong>Single-pass/Single-pass</strong>: Both sides single pass, minimum pressure drop</li>
+<li><strong>Multi-pass/Multi-pass</strong>: Increasing passes raises velocity and heat transfer coefficient, but increases pressure drop</li>
+<li><strong>Single-pass/Multi-pass</strong>: One side single pass, one side multi-pass; for large flow differences</li>
+</ul>
+<hr>
+<h2>Material Selection</h2>
+<h3>Plate Materials</h3>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Suitable Media</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>304 Stainless Steel</td>
+<td>General water, oils</td>
+</tr>
+<tr>
+<td>316/316L Stainless Steel</td>
+<td>Seawater, chloride-containing media, food &amp; pharma</td>
+</tr>
+<tr>
+<td>Titanium &amp; Alloys</td>
+<td>Seawater, highly corrosive media</td>
+</tr>
+<tr>
+<td>SMO 254</td>
+<td>High-chloride environments, hydrochloric acid</td>
+</tr>
+<tr>
+<td>Hastelloy C-276</td>
+<td>Strong acids, alkalis, oxidizing media</td>
+</tr>
+<tr>
+<td>Nickel</td>
+<td>Caustic soda and other alkaline media</td>
+</tr>
+</tbody></table>
+<h3>Gasket Materials</h3>
+<table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Temperature Range</th>
+<th>Suitable Media</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NBR</td>
+<td>-20~135°C</td>
+<td>Water, mineral oil</td>
+</tr>
+<tr>
+<td>EPDM</td>
+<td>-50~160°C</td>
+<td>Hot water, steam, weak acids/bases</td>
+</tr>
+<tr>
+<td>Viton</td>
+<td>-40~200°C</td>
+<td>Acids, alkalis, organic solvents, oils</td>
+</tr>
+<tr>
+<td>PTFE</td>
+<td>-200~260°C</td>
+<td>Strongly corrosive media</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Daily Maintenance Essentials</h2>
+<h3>Routine Inspection</h3>
+<ol>
+<li>Check for external leaks or drips</li>
+<li>Monitor inlet/outlet pressures and temperatures</li>
+<li>Record pressure drop changes</li>
+<li>Check tightening bolts for looseness</li>
+<li>Observe for abnormal vibration in the base frame</li>
+</ol>
+<h3>Regular Cleaning</h3>
+<p>Cleaning frequency depends on media characteristics:</p>
+<ul>
+<li>Clean water systems: 1–2 years</li>
+<li>Cooling/river water: 3–6 months</li>
+<li>Oil-containing or viscous media: 1–3 months</li>
+<li>Food &amp; beverage: after each production cycle</li>
+</ul>
+<p>Cleaning methods:</p>
+<ol>
+<li><strong>Backflushing</strong>: Reverse flush without disassembly</li>
+<li><strong>Chemical cleaning</strong>: Circulate acid, alkali, or specialized cleaning agents</li>
+<li><strong>Mechanical cleaning</strong>: Disassemble and use high-pressure water or brushes</li>
+</ol>
+<h3>Chemical Cleaning Precautions</h3>
+<ul>
+<li>Verify cleaning agent compatibility with plate and gasket materials</li>
+<li>Control cleaning temperature and concentration</li>
+<li>Thoroughly rinse with clean water after cleaning</li>
+<li>Perform passivation treatment if necessary</li>
+</ul>
+<hr>
+<h2>Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Possible Cause</th>
+<th>Corrective Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reduced heat transfer efficiency</td>
+<td>Fouling, blockage, gasket aging/cross-flow</td>
+<td>Clean, replace gaskets</td>
+</tr>
+<tr>
+<td>Increased pressure drop</td>
+<td>Fouling, blockage, plate deformation</td>
+<td>Clean, inspect plates</td>
+</tr>
+<tr>
+<td>External leakage</td>
+<td>Gasket aging, loose bolts, plate cracks</td>
+<td>Tighten bolts, replace gaskets/plates</td>
+</tr>
+<tr>
+<td>Internal leakage (cross-flow)</td>
+<td>Misaligned gaskets, perforation, cracks</td>
+<td>Reassemble, replace plates/gaskets</td>
+</tr>
+<tr>
+<td>Abnormal vibration/noise</td>
+<td>Excessive flow, cavitation, inadequate support</td>
+<td>Adjust flow, vent air, reinforce support</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Disassembly &amp; Assembly Precautions</h2>
+<ol>
+<li><strong>Record compression dimension</strong>: Measure and record the A-dimension before disassembly</li>
+<li><strong>Loosen bolts in diagonal sequence</strong>: Prevent plate pack deformation</li>
+<li><strong>Mark plate sequence and orientation</strong>: Critical for correct reassembly</li>
+<li><strong>Inspect plate and gasket condition</strong>: Replace if cracks or wear found</li>
+<li><strong>Tighten bolts evenly in diagonal sequence</strong>: Gradually compress to specified dimension</li>
+<li><strong>Perform pressure test</strong>: Check sealing after reassembly</li>
+</ol>
+<hr>
+<h2>Summary</h2>
+<p>PHE selection and maintenance directly affect heat transfer efficiency, service life, and operational safety. Selection must fully consider process parameters, media characteristics, space constraints, and economics. Operation requires diligent inspection, cleaning, and preventive maintenance. Through scientific management, PHEs can maintain high-efficiency, stable operation over the long term, delivering sustained value to the enterprise.</p>
+
+      </div>
+      <div style="max-width: 860px; margin: 48px auto 0; padding-top: 32px; border-top: 2px solid var(--border);">
+        <a href="../index.html" class="back-btn">← Back to Articles</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Plate Heat Exchanger Blog &copy; 2026 · Professional Technical Platform</p>
+    <p class="footer-contact">📞 <a href="tel:15152212215">151 5221 2215</a> &nbsp;·&nbsp; 📧 <a href="mailto:luzhan881214@gmail.com">luzhan881214@gmail.com</a></p>
+  </footer>
+</body>
+</html>
