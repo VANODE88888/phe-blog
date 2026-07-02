@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>板式换热器选型与维护完全指南 - 板式换热器专业博客</title>
+  <meta name="description" content="正确选型和定期维护是保证板式换热器长期稳定运行的关键。本文从选型计算到日常维护，系统讲解板式换热器的工程实践。" />
+  <meta property="og:title" content="板式换热器选型与维护完全指南" />
+  <meta property="og:description" content="正确选型和定期维护是保证板式换热器长期稳定运行的关键。本文从选型计算到日常维护，系统讲解板式换热器的工程实践。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://heat-exchanger-blog.example.com/articles/phe-selection-maintenance.html" />
+  <meta property="og:site_name" content="板式换热器专业博客" />
+  <meta name="baidu-site-verification" content="codeva-BlqOLVMNRx" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">
+        <a href="../index.html" style="text-decoration:none;color:inherit;">
+          <span class="logo-icon">⚙️</span>
+          板式换热<span>器博客</span>
+        </a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="../index.html" class="active">首页</a></li>
+        <li><a href="../tags.html">标签</a></li>
+        <li><a href="../about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+
+    <div class="container fade-in">
+      <div class="article-detail">
+        <a href="../index.html" class="back-btn">← 返回首页</a>
+        <div class="article-detail-header">
+          <div class="tags-row"><span class="tag">选型</span><span class="tag">维护</span><span class="tag">工程实践</span></div>
+          <h1>板式换热器选型与维护完全指南</h1>
+          <div class="meta-row">
+            <span class="meta-item">📅 2026年5月18日</span>
+            <span class="meta-item">⏱ 14 分钟阅读</span>
+          </div>
+        </div>
+      </div>
+      <div class="markdown-body">
+        <h2>选型前的基础数据</h2>
+<p>板式换热器选型是一个系统工程，需要准确的工艺参数。选型前应收集以下信息：</p>
+<h3>1. 流体参数</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>热侧流量</td>
+<td>单位 m³/h 或 kg/h</td>
+</tr>
+<tr>
+<td>冷侧流量</td>
+<td>单位 m³/h 或 kg/h</td>
+</tr>
+<tr>
+<td>热侧进口温度</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>热侧出口温度</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>冷侧进口温度</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>冷侧出口温度</td>
+<td>°C</td>
+</tr>
+<tr>
+<td>介质名称</td>
+<td>水、油、蒸汽、制冷剂等</td>
+</tr>
+<tr>
+<td>介质浓度</td>
+<td>如有腐蚀性或含颗粒需注明</td>
+</tr>
+<tr>
+<td>物性参数</td>
+<td>密度、比热容、导热系数、粘度</td>
+</tr>
+</tbody></table>
+<h3>2. 允许压降</h3>
+<ul>
+<li>热侧允许压降（kPa 或 bar）</li>
+<li>冷侧允许压降（kPa 或 bar）</li>
+</ul>
+<h3>3. 设计压力和温度</h3>
+<ul>
+<li>最高工作压力（MPa）</li>
+<li>最高工作温度（°C）</li>
+<li>是否需要特殊设计条件</li>
+</ul>
+<h3>4. 空间和接口要求</h3>
+<ul>
+<li>安装空间尺寸限制</li>
+<li>进出口接管方向要求</li>
+<li>接口标准（法兰标准、螺纹规格）</li>
+</ul>
+<hr>
+<h2>热负荷计算</h2>
+<h3>基本公式</h3>
+<pre data-lang="text"><code class="hljs language-text">Q = m · cp · ΔT
+</code></pre>
+<p>其中：</p>
+<ul>
+<li><code>Q</code>：热负荷，单位 kW</li>
+<li><code>m</code>：质量流量，单位 kg/s</li>
+<li><code>cp</code>：比热容，单位 kJ/(kg·°C)</li>
+<li><code>ΔT</code>：温差，单位 °C</li>
+</ul>
+<h3>示例</h3>
+<p>某冷却系统：</p>
+<ul>
+<li>热水流量 50 m³/h</li>
+<li>热水密度 1000 kg/m³ → 质量流量 = 50 × 1000 / 3600 = 13.89 kg/s</li>
+<li>热水比热容 4.18 kJ/(kg·°C)</li>
+<li>热水进口 80°C，出口 60°C</li>
+</ul>
+<p>热负荷：</p>
+<pre data-lang="text"><code class="hljs language-text">Q = 13.89 × 4.18 × (80 - 60) = 1161 kW
+</code></pre>
+<hr>
+<h2>对数平均温差（LMTD）</h2>
+<p>对于逆流换热器：</p>
+<pre data-lang="text"><code class="hljs language-text">LMTD = (ΔT1 - ΔT2) / ln(ΔT1 / ΔT2)
+</code></pre>
+<p>示例：</p>
+<ul>
+<li>热侧：80°C → 60°C</li>
+<li>冷侧：20°C → 40°C</li>
+<li>逆流时：ΔT1 = 80 - 40 = 40°C，ΔT2 = 60 - 20 = 40°C</li>
+<li>LMTD = (40 - 40) / ln(40/40) → 无法计算</li>
+</ul>
+<p>当 ΔT1 = ΔT2 时，LMTD = ΔT1 = ΔT2 = 40°C。</p>
+<h3>温度效率</h3>
+<p>板式换热器通常可以实现较小的端差（1~3°C），这是其高效率的重要体现。</p>
+<hr>
+<h2>选型核心原则</h2>
+<h3>1. 换热面积估算</h3>
+<pre data-lang="text"><code class="hljs language-text">A = Q / (K · LMTD · F)
+</code></pre>
+<p>其中：</p>
+<ul>
+<li><code>A</code>：换热面积，m²</li>
+<li><code>K</code>：传热系数，W/(m²·K)，板式换热器通常取 3000~6000</li>
+<li><code>F</code>：修正系数，一般 0.8~0.95</li>
+</ul>
+<h3>2. 板片数量估算</h3>
+<pre data-lang="text"><code class="hljs language-text">N = A / A_single
+</code></pre>
+<p>其中 <code>A_single</code> 为单片板片的有效换热面积。</p>
+<h3>3. 流程配置</h3>
+<p>板式换热器的流程配置直接影响传热和压降：</p>
+<ul>
+<li><strong>单流程/单流程</strong>：两侧均为单程，压降最小</li>
+<li><strong>多流程/多流程</strong>：增加流程数可提高流速和传热系数，但压降增加</li>
+<li><strong>单流程/多流程</strong>：一侧单流程，一侧多流程，用于流量差异大的场合</li>
+</ul>
+<hr>
+<h2>材料选择</h2>
+<h3>板片材质</h3>
+<table>
+<thead>
+<tr>
+<th>材质</th>
+<th>适用介质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>304 不锈钢</td>
+<td>一般水、油类</td>
+</tr>
+<tr>
+<td>316/316L 不锈钢</td>
+<td>海水、含氯离子介质、食品医药</td>
+</tr>
+<tr>
+<td>钛及钛合金</td>
+<td>海水、强腐蚀性介质</td>
+</tr>
+<tr>
+<td>SMO 254</td>
+<td>高浓度氯离子、含盐酸环境</td>
+</tr>
+<tr>
+<td>哈氏合金 C-276</td>
+<td>强酸、强碱、强氧化性介质</td>
+</tr>
+<tr>
+<td>镍</td>
+<td>烧碱等碱性介质</td>
+</tr>
+</tbody></table>
+<h3>垫片材质</h3>
+<table>
+<thead>
+<tr>
+<th>材质</th>
+<th>温度范围</th>
+<th>适用介质</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NBR</td>
+<td>-20~135°C</td>
+<td>水、矿物油</td>
+</tr>
+<tr>
+<td>EPDM</td>
+<td>-50~160°C</td>
+<td>热水、蒸汽、弱酸碱</td>
+</tr>
+<tr>
+<td>Viton</td>
+<td>-40~200°C</td>
+<td>酸、碱、有机溶剂、油品</td>
+</tr>
+<tr>
+<td>PTFE</td>
+<td>-200~260°C</td>
+<td>强腐蚀介质</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>日常维护要点</h2>
+<h3>日常巡检</h3>
+<ol>
+<li>检查有无外漏、滴漏</li>
+<li>监测进出口压力和温度</li>
+<li>记录压降变化</li>
+<li>检查夹紧螺栓是否松动</li>
+<li>观察基础支架有无异常振动</li>
+</ol>
+<h3>定期清洗</h3>
+<p>清洗周期取决于介质特性：</p>
+<ul>
+<li>清水系统：1~2 年</li>
+<li>冷却水/河水：3~6 个月</li>
+<li>含油或粘稠介质：1~3 个月</li>
+<li>食品饮料：每次生产周期后</li>
+</ul>
+<p>清洗方法：</p>
+<ol>
+<li><strong>反冲洗</strong>：不拆开设备，反向冲洗</li>
+<li><strong>化学清洗</strong>：用酸、碱或专用清洗剂循环</li>
+<li><strong>机械清洗</strong>：拆开后用高压水枪或刷子清洗</li>
+</ol>
+<h3>化学清洗注意事项</h3>
+<ul>
+<li>确认清洗剂与板片、垫片材质兼容</li>
+<li>控制清洗温度和浓度</li>
+<li>清洗后彻底用清水冲洗</li>
+<li>必要时进行钝化处理</li>
+</ul>
+<hr>
+<h2>故障诊断与处理</h2>
+<table>
+<thead>
+<tr>
+<th>故障现象</th>
+<th>可能原因</th>
+<th>处理措施</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>换热效率下降</td>
+<td>结垢、堵塞、垫片老化串流</td>
+<td>清洗、更换垫片</td>
+</tr>
+<tr>
+<td>压降增大</td>
+<td>结垢、堵塞、板片变形</td>
+<td>清洗、检查板片</td>
+</tr>
+<tr>
+<td>外漏</td>
+<td>垫片老化、螺栓松动、板片裂纹</td>
+<td>紧固螺栓、更换垫片、更换板片</td>
+</tr>
+<tr>
+<td>内漏（串流）</td>
+<td>垫片错位、穿孔、裂纹</td>
+<td>重新组装、更换板片垫片</td>
+</tr>
+<tr>
+<td>异常振动/噪音</td>
+<td>流量过大、气蚀、支撑不稳</td>
+<td>调整流量、排气、加固支撑</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>拆装注意事项</h2>
+<ol>
+<li><strong>记录夹紧尺寸</strong>：拆卸前测量并记录 A 尺寸</li>
+<li><strong>按对角线顺序松开螺栓</strong>：防止板片组变形</li>
+<li><strong>标记板片顺序和方向</strong>：重新组装时不能错位</li>
+<li><strong>检查板片和垫片状态</strong>：发现裂纹、磨损及时更换</li>
+<li><strong>按对角线顺序均匀拧紧螺栓</strong>：逐步压紧到规定尺寸</li>
+<li><strong>进行压力测试</strong>：重新组装后检查密封性</li>
+</ol>
+<hr>
+<h2>总结</h2>
+<p>板式换热器的选型和维护直接影响设备的换热效率、使用寿命和运行安全。选型时要充分考虑工艺参数、介质特性、空间限制和经济性；运行中要做好巡检、清洗和预防性维护。通过科学的管理，板式换热器可以长期保持高效稳定运行，为企业创造持续价值。</p>
+
+      </div>
+      <div style="max-width: 860px; margin: 48px auto 0; padding-top: 32px; border-top: 2px solid var(--border);">
+        <a href="../index.html" class="back-btn">← 返回文章列表</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>板式换热器博客 &copy; 2026 · 专业技术交流平台</p>
+    <p class="footer-contact">📞 <a href="tel:15152212215">151 5221 2215</a> &nbsp;·&nbsp; 📧 <a href="mailto:luzhan1214@126.com">luzhan1214@126.com</a></p>
+  </footer>
+</body>
+</html>
