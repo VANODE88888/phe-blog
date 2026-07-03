@@ -738,6 +738,101 @@ img {
   color: var(--primary);
 }
 
+/* ---------- WhatsApp 二维码 ---------- */
+.whatsapp-qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  max-width: 180px;
+}
+
+.whatsapp-qr-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.whatsapp-qr-card span {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.footer-whatsapp {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.footer-whatsapp > a {
+  color: var(--primary);
+}
+
+.footer-qr {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.96);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+  pointer-events: none;
+  z-index: 50;
+}
+
+.footer-qr::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0;
+  border-style: solid;
+  border-color: var(--border) transparent transparent transparent;
+}
+
+.footer-qr img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.footer-qr-caption {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.footer-whatsapp:hover .footer-qr,
+.footer-whatsapp:focus-within .footer-qr {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+.contact-item-whatsapp .contact-label {
+  color: #25d366;
+}
+
 /* ---------- 返回按钮 ---------- */
 .back-btn {
   display: inline-flex;
